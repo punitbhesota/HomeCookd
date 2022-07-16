@@ -1,0 +1,152 @@
+.Header {
+  height: 8vh;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header-outer {
+  width: 100%;
+  display: flex;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+.content-box {
+  width: 60vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+span {
+  margin-right: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#logo {
+  border-right: 1px dashed black;
+  padding-right: 20px;
+  margin-right: 100px;
+}
+#logo img {
+  width: 220px;
+}
+#signup {
+  width: 130px;
+  height: 45px;
+  border: 1px dashed grey;
+  font-size: 17px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: rgb(95, 95, 95);
+  border-radius: 25px;
+  background-color: white;
+  outline: none;
+}
+#signup:hover {
+  background-color: rgb(46, 62, 105);
+  color: white;
+  border: 1px solid rgb(46, 62, 105);
+  transition: 0.5s;
+}
+
+.header-p {
+  flex: 1;
+}
+.nav-btn {
+  display: none;
+  background-color: rgb(46, 62, 105);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+}
+.nav-btn img {
+  width: 20px;
+}
+.buttons {
+  display: flex;
+}
+.navformobile {
+  display: none;
+  padding: 40px 0;
+  width: 100%;
+  height: 40vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  top: 12vh;
+  right: 0;
+}
+
+.navformobile-links {
+  display: flex;
+  font-size: 20px;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: center;
+}
+@media (min-width: 1400px) {
+  .Header div {
+    width: 1100px;
+  }
+  .Header {
+    height: 8vh;
+  }
+  .header-p {
+    display: none;
+  }
+
+  .buttons {
+    flex: 0;
+  }
+}
+@media (max-width: 1020px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-btn {
+    display: flex;
+  }
+}
+@media (max-width: 750px) {
+  #signup {
+    display: none;
+  }
+  .Header-outer {
+    justify-content: space-between;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .Header {
+    padding: 40px 20px;
+  }
+  #logo {
+    margin-right: 0;
+  }
+  #logo img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 330px) {
+  .Header {
+    padding: 40px 15px;
+  }
+  #logo img {
+    width: 160px;
+  }
+  .nav-btn {
+    width: 37px;
+    height: 37px;
+  }
+}

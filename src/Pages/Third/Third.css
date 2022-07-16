@@ -1,0 +1,81 @@
+.Third {
+  background-color: rgb(0, 22, 50);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+  padding: 100px 0 130px 0;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+#home-signIn {
+  width: 550px;
+  height: 60px;
+  border-radius: 35px;
+  border: none;
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+  margin-top: 60px;
+  background-color: white;
+  overflow: hidden;
+}
+#home-signIn input {
+  padding: 0 20px;
+  border: none;
+  font-weight: 500;
+  width: 300px;
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif;
+  border: none;
+}
+#home-signIn input::placeholder {
+  color: rgb(216, 203, 203);
+}
+#home-signIn button {
+  background-color: orange;
+  width: 220px;
+  font-family: sans-serif;
+  font-size: 14px;
+  height: 100%;
+  font-weight: 600;
+  border-radius: 35px;
+  border: none;
+  color: white;
+}
+@media (max-width: 1000px) {
+  #home-signIn {
+    width: 50%;
+    border-radius: 35px;
+  }
+
+  #home-signIn button {
+    width: 50%;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1400px) {
+  .Third {
+    height: 60vh;
+  }
+}
+@media (max-width: 770px) {
+  .Third h1 {
+    font-size: 2.5rem;
+  }
+  #home-signIn {
+    width: 80%;
+    border: 1px solid black;
+  }
+  #home-signIn input {
+    width: 50%;
+  }
+  #home-signIn button {
+    width: 50%;
+  }
+}

@@ -1,0 +1,67 @@
+.Footer {
+  background-color: rgb(31, 54, 86);
+  padding: 40px 50px 60px 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Inter";
+}
+#HClogo {
+  height: 35px;
+}
+.Footer-main {
+  display: flex;
+  justify-content: space-between;
+}
+.Footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  align-items: center;
+  padding: 0 20px;
+}
+.Footer-links p {
+  margin: 0 15px;
+}
+#insta-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#insta-logo img {
+  width: 45px;
+  border: white 1px solid;
+  background-color: white;
+  padding: 6px;
+  border-radius: 50%;
+}
+hr {
+  width: 98%;
+  border: 1px solid rgb(90, 88, 88);
+  background-color: rgba(128, 128, 128, 0);
+  margin-top: 50px;
+}
+#copyright {
+  margin-top: 20px;
+}
+@media (max-width: 1000px) {
+  .Footer {
+    align-items: center;
+    height: 100%;
+  }
+  .Footer-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer-links {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .Footer-links p {
+    padding: 0;
+    margin: 0;
+  }
+}
