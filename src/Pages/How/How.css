@@ -9,17 +9,22 @@
   align-items: center;
   font-weight: 700;
   padding: 100px 5vw 120px 5vw;
+  box-sizing: border-box;
 }
 .How h2 {
-  color: rgb(22, 38, 83);
-  font-size: 3rem;
-  font-weight: 700;
   text-align: center;
+  font-weight: bold;
+  white-space: normal;
+  text-align: left;
+  color: #1a3066;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-size: 46px;
 }
 .How-process {
   display: flex;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 40px;
   justify-content: space-around;
   align-items: center;
 }
@@ -28,14 +33,14 @@
   border-radius: 10px;
   width: 100%;
   height: 300px;
-  margin: 20px;
+  margin: 28px;
   display: flex;
   color: rgb(22, 38, 83);
   font-size: 25px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
+  padding: 30px 20px;
 }
 .How-process div:hover {
   transform: translateY(-8px);
@@ -43,15 +48,25 @@
 }
 .How-process div p {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e3642;
+}
+.How-process div img {
+  width: 160px;
 }
 @media (min-width: 1400px) {
   .How {
-    height: 70vh;
+    height: 100%;
+    padding: 100px 0 250px 0;
+  }
+  .How-process {
+    margin-top: 40px;
+    max-width: 80%;
   }
   .How-process div p {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 24px;
   }
 }
 @media (max-width: 1000px) {
@@ -67,9 +82,26 @@
     flex-direction: column;
   }
   .How-process div p {
-    font-size: 1.3rem;
+    font-size: 24px;
   }
   .How-process div {
     padding-top: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .How-process div img {
+    width: 100px;
+  }
+  .How-process div {
+    height: 100%;
+    padding: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .How-process div p {
+    font-size: 20px;
+  }
+  .How h2 {
+    font-size: 36px;
   }
 }

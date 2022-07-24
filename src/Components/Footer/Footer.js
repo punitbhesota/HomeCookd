@@ -5,17 +5,23 @@ function Footer() {
   return (
     <div className="Footer" id="footer">
       <div className="Footer-main">
-        <img id="HClogo" src="./logo2.svg" alt="Home cookd" />
+        <div className="Footer-main-logo-address">
+          <img id="HClogo" src="./logo2.svg" alt="Home cookd" />
+          <p className="address">
+            Homecookd B.V. 64 Zeeburgstraat, 1018 AG, Amsterdam, North Holland
+            The Netherlands
+          </p>
+        </div>
         <div className="Footer-links">
           <p>Terms &amp; Conditions</p>
           <p>&nbsp;&nbsp;&nbsp;|</p>
           <p>Footer link</p>
           <p>&nbsp;&nbsp;&nbsp;|</p>
           <p>Footer link</p>
-          <p>&nbsp;&nbsp;&nbsp;|</p>
-          <p id="insta-logo">
+          <p>&nbsp;&nbsp;&nbsp;</p>
+          <a href="https://www.instagram.com/homecookd21/" id="insta-logo">
             <img src="./insta.png" alt="instagram" />
-          </p>
+          </a>
         </div>
       </div>
       <hr />

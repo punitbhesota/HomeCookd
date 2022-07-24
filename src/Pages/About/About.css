@@ -1,19 +1,25 @@
 .about {
   background-color: rgb(240, 247, 255);
-  height: 85vh;
+  height: 100%;
   color: black;
-  padding: 50px 0;
+  padding: 150px 10px;
 }
 
 .about-inner {
   height: 100%;
   display: flex;
-  padding: 0 50px;
 }
+/* #owner div {
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 50% 0 50% 50%;
+} */
 #owner img {
-  height: 400px;
-  width: 400px;
-  border-radius: 400px 0px 400px 400px;
+  height: 350px;
+  width: 350px;
+  /* overflow: hidden; */
+  border-radius: 50% 0 50% 50%;
 }
 
 #about-text,
@@ -22,22 +28,35 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-}
-#about-text {
-  align-items: flex-start;
-  padding: 0 20px;
+  /* overflow: hidden; */
+  align-items: flex-end;
 }
 
-.about-content,
+#owner {
+  padding-right: 50px;
+}
+#about-text {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 20px 0 50px;
+}
+
 .about-content-caption {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
   font-size: 1.1rem;
   color: #556681;
+  /* font-size: 500; */
+}
+.chef-name {
+  /* font-size: 25px; */
 }
 
 .buttons-about {
   display: flex;
-  width: 210px;
+  width: 215px;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -50,30 +69,56 @@
 .arrow-btn-right,
 .arrow-btn-left {
   background-color: white;
-  border-radius: 25px;
-  height: 55px;
+  border-radius: 35px;
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 45px 0 rgb(0 22 50 / 10%);
+}
+.arrow-btn-light-left,
+.arrow-btn-light-right {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 35px;
+  height: 60px;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .arrow-btn-right img,
 .arrow-btn-left img {
   width: 28px;
 }
+.arrow-btn-light-left img,
+.arrow-btn-light-right img {
+  width: 28px;
+}
 
 .arrow-btn-left img:hover {
-  transform: translateX(-4px);
+  transform: translateX(-6px);
   cursor: pointer;
   transition: 1s;
 }
 
 .arrow-btn-right img:hover {
-  transform: translateX(4px);
+  transform: translateX(6px);
   cursor: pointer;
   transition: 1s;
 }
+@media (min-width: 1400px) {
+  #owner img {
+    height: 500px;
+    width: 500px;
+    border-radius: 250px 0px 250px 250px;
+  }
+  .about {
+    height: 100%;
+    padding: 250px 0 250px 0;
+  }
+}
+
 @media (max-width: 950px) {
   .about {
     height: 100%;
@@ -86,30 +131,43 @@
     align-items: center;
     height: 100%;
     margin: 0;
-    text-align: left;
   }
   #owner {
     margin-bottom: 40px;
     width: 100%;
+    align-items: center;
+    padding: 0;
   }
   #owner img {
     height: 300px;
     width: 300px;
-    border-radius: 100px 1px 100px 100px;
+    border-radius: 150px 0px 150px 150px;
   }
   .about-content-caption {
-    width: 100%;
+    width: 300px;
     margin: 0;
+    align-items: flex-start;
   }
   #about-text {
     width: 100%;
     padding: 0;
+    align-items: center;
   }
   .buttons-about {
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 220px;
     align-items: center;
     padding: 0;
-    margin: 5;
+    margin-top: 15px;
+  }
+  .arrow-btn-right,
+  .arrow-btn-left {
+    background-color: white;
+    border-radius: 35px;
+    height: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

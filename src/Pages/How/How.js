@@ -8,7 +8,7 @@ function How() {
       <div className="How-process">
         <div>
           <img src="./forkNknife.svg" alt="fork" />
-          <p>Find chef and book meal slot</p>
+          <p>Select a chef and a meal slot</p>
         </div>
         <div>
           <img src="./Soup.svg" alt="fork" />

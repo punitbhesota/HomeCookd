@@ -22,7 +22,7 @@ function Header() {
               <span>Home</span>
             </Link>
             <Link to="how" smooth={true}>
-              <span>How its works</span>
+              <span>How it works</span>
             </Link>
             <Link to="About" smooth={true}>
               <span>About us</span>
@@ -32,13 +32,9 @@ function Header() {
             </Link>
           </div>
         </div>
-        <p className="header-p"></p>
-        <div className="buttons">
-          <button id="signup">Sign up</button>
-          <button onClick={openNav} className="nav-btn">
-            <img src="./hamburger.png" alt="&amp;" />
-          </button>
-        </div>
+        <button onClick={openNav} className="nav-btn">
+          <img src="./hamburger.png" alt="&amp;" />
+        </button>
       </nav>
       <div className="navformobile">
         <Link onClick={openNav} to="home" smooth={true}>

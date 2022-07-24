@@ -8,7 +8,7 @@
   font-family: "Inter";
 }
 #HClogo {
-  height: 35px;
+  height: 50px;
 }
 .Footer-main {
   display: flex;
@@ -23,6 +23,7 @@
 }
 .Footer-links p {
   margin: 0 15px;
+  font-size: 14px;
 }
 #insta-logo {
   display: flex;
@@ -30,11 +31,16 @@
   align-items: center;
 }
 #insta-logo img {
-  width: 45px;
+  width: 37px;
   border: white 1px solid;
   background-color: white;
-  padding: 6px;
+  padding: 4px;
   border-radius: 50%;
+}
+.address {
+  width: 80%;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.363);
 }
 hr {
   width: 98%;
@@ -44,6 +50,7 @@ hr {
 }
 #copyright {
   margin-top: 20px;
+  font-size: 12px;
 }
 @media (max-width: 1000px) {
   .Footer {
@@ -51,6 +58,11 @@ hr {
     height: 100%;
   }
   .Footer-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer-main-logo-address {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -63,5 +75,9 @@ hr {
   .Footer-links p {
     padding: 0;
     margin: 0;
+  }
+  .address {
+    text-align: center;
+    width: 100%;
   }
 }
